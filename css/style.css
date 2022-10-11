@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300&display=swap');
+
+/**ANIMACION text-focus-in**/
+@keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+/**
+font-family: 'Inter Tight', sans-serif;
+*/
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+
+
+
+.container {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: repeat (5, 1fr);
+    grid-template-rows: repeat (3, 1fr);
+    grid-template-areas:
+        "menu1 menu1 menu1 menu1 menu1"
+        "main main main main main"
+        "footer footer footer footer footer"
+    ;
+}
+
+/**HEADER**/
+
+header {
+    grid-area: menu1;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-size: cover;
+}
+
+
+.menu {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rancho a img {
+    width: 376px;
+    height: 119px;
+    padding: 20px;
+}
+
+.navBar {
+    display: flex;
+    justify-content: end;
+    padding: 35px;
+    gap: 20px;
+}
+
+.navBar li {
+    list-style: none;
+}
+
+.navBar li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 20px;
+    position: relative;
+}
+
+.navBar li:hover {
+    transform: scale(1.1);
+}
+
+.navBar li a:hover {
+    color: rgba(255, 0, 0, 0.856);
+}
+
+
+/**MAIN INDEX**/
+
+
+main {
+    grid-area: main;
+    background-color: black;
+    z-index: 3;
+    background-size: cover;
+    height: 799px;
+}
+
+.imagenIndex img {
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    opacity: 1;
+}
+
+.imagenIndex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.title {
+    color: white;
+    background-image: url("../img/local1.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 20rem;
+    max-width: 100%;
+    font-family: 'Inter Tight', sans-serif;
+    background-size: contain;
+}
+
+.title h1 {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.parrafo {
+    color: white;
+    justify-self: center;
+    align-self: center;
+}
+
+.parrafo p {
+    text-align: center;
+    font-family: 'Inter Tight', sans-serif;
+    font-size: large;
+    padding: 50px 300px 50px 300px;
+}
+
+.imagenIndex img {
+    position: relative;
+    border-radius: 20px;
+
+}
+
+.imagenIndex img:hover {
+    opacity: 0.2;
+}
+
+
+/**SOBRE NOSOTROS**/
+
+.sobreNosotros {
+    background-image: url("../img/campoSobreNosotros.png");
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.title2 {
+    color: white;
+    padding: 40px;
+    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+.sobreNosotros section {
+    text-align: center;
+    font-family: 'Inter Tight', sans-serif;
+    font-size: large;
+}
+
+.sobreNosotros div p {
+    color: white;
+    padding: 50px;
+    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+
+
+.sobreNosotros ul {
+    color: white;
+    padding: 10px;
+    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+/*LOCALES*/
+
+.Locales1 {
+    background-image: url(../img/local1\ 1.jpg);
+    background-repeat: no-repeat;
+}
+
+.title3 {
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    font-family: 'Inter Tight', sans-serif;
+    padding: 40px;
+}
+
+.carneTL {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tituloLocal {
+    font-weight: bolder;
+    text-align: center;
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 35px;
+    color: white;
+    padding: 20px;
+}
+
+.locales p {
+    text-align: center;
+    font-family: 'Inter Tight', sans-serif;
+    font-size: large;
+    color: white;
+    font-weight: 300;
+    padding: 10px;
+}
+
+.maps {
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    border: solid 10px;
+}
+
+/*CONTACTANOS*/
+
+.contactanos {
+    font-family: 'Inter Tight', sans-serif;
+    font-size: large;
+    color: white;
+    font-weight: 300;
+    padding: 85px;
+    background-image: url(../img/campoInfo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nombre {
+    display: block;
+    padding: 10px;
+    font-family: 'Inter Tight', sans-serif;
+}
+
+.apellido {
+    display: block;
+    padding: 10px;
+    font-family: 'Inter Tight', sans-serif;
+}
+
+.email {
+    display: block;
+    padding: 10px;
+    font-family: 'Inter Tight', sans-serif;
+}
+
+.comentario {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    font-family: 'Inter Tight', sans-serif;
+}
+
+/*INFO*/
+
+.info {
+    background-image: url("../img/campo.png");
+    background-size: cover;
+}
+
+.info h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Inter Tight', sans-serif;
+    padding: 50px;
+    font-size: 60px;
+    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+.info div p {
+    text-align: center;
+    font-size: large;
+    font-family: 'Inter Tight', sans-serif;
+    padding: 80px;
+    color: white;
+    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+/*FOOTER*/
+
+footer {
+    grid-area: footer;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(68, 68, 68, 1) 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 73px;
+}
+
+footer section {
+    padding: 10px;
+}
+
+footer section a {
+    padding: 20px;
+    margin: 10px;
+}
+
+footer section a img {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+@media (max-width: 768px){
+    .container{
+        
+        grid-template-columns: repeat(1, 1fr);
+    
+    grid-template-rows: repeat (3, 1fr);
+    grid-template-areas: 
+    "menu1"
+    "main"
+    "footer"
+    ;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        width: 768px;
+    }
+    .rancho{
+        align-self: center;
+    }
+    .navBar{
+        display: flex;
+        justify-content: space-between;
+    }
+    main{
+        width: 768px;
+        height: auto;
+    }
+    .parrafo p{
+        padding: 20px;
+    }
+    .imagenIndex{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "img1 img2"
+        "img3 img4"
+        ;
+    }
+    .img1{
+        grid-area: img1;
+    }
+    .img2{
+        grid-area: img2;
+    }
+    .img3{
+        grid-area: img3;
+    }
+    .img4{
+        grid-area: img4;
+    }
+    .imagenIndex img{
+        justify-self: center;
+    }
+    .title{
+        background-size: auto;
+    }
+}
