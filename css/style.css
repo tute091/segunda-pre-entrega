@@ -104,8 +104,8 @@ main {
 }
 
 .imagenIndex img {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     padding: 10px;
     opacity: 1;
 }
@@ -113,7 +113,7 @@ main {
 .imagenIndex {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .title {
@@ -280,30 +280,40 @@ main {
 
 /*INFO*/
 
+.navBarInfo {
+
+    padding: 35px;
+    gap: 20px;
+}
+.navBarInfo li {
+    list-style: none;
+}
+
+.navBarInfo li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 20px;
+}
+
+.navBarInfo li:hover {
+    transform: scale(1.1);
+}
+
+.navBarInfo li a:hover {
+    color: rgba(255, 0, 0, 0.856);
+}
+
 .info {
     background-image: url("../img/campo.png");
     background-size: cover;
 }
-
-.info h1 {
-    color: white;
-    text-align: center;
-    font-family: 'Inter Tight', sans-serif;
-    padding: 50px;
-    font-size: 60px;
+.info1{
     -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
     animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
-.info div p {
-    text-align: center;
-    font-size: large;
-    font-family: 'Inter Tight', sans-serif;
-    padding: 80px;
-    color: white;
-    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-}
+
 
 /*FOOTER*/
 
